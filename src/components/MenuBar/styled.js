@@ -14,3 +14,23 @@ export const MenuBarWrapper = styled.aside`
     right: 0;
     width: 3.75rem;
 `
+export const MenuBarGroup = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+export const MenuBarLink = styled(Link)`
+    display: clock;
+`
+export const MenuBarItem = styled.span`
+    color: #8899a6;
+    cursor: pointer;
+    display: block;
+    height: 3.75rem;
+    padding: 1.1rem;
+    position: relative;
+    width: 3.75rem;
+
+    &:hover {
+        color: #1fa1f2;
+    }
+`
