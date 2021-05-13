@@ -1,17 +1,22 @@
 ---
-date: 2021-12-05 18:53:00
-title: Mussum Ipsum para começar.
-description: Professor pediu um segundo post aqui, então vamos encher de Lorem Ipsum cacilds.
-category: Nonon
-background: "#7aab13" 
+date: 2021-13-05 19:08:00
+title: Capítulo de hoje - aprendendo GraphQL.
+description: Construindo esse blog em React com Gatsby, eu não sabia que aprenderia sobre GraphQL.
+category: Estudos
+background: "#000" 
 ---
 
-# Lorem Ipsum?
+# GraphQL?
 
-Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Sapien in monti palavris qui num significa nadis i pareci latim. Per aumento de cachacis, eu reclamis. Diuretics paradis num copo é motivis de denguis.
+O que seria GraphQL? algo gráfico? Imagens? Socorro?  
+Eu também não sabia, mas GraphQL é uma linguagem de consulta criada pelo Facebook (sempre ele né) que facilita demais o trabalho na hora de fazer requisiçoes. Com ela, podemos evitar que o servidor nos envie dados que não iremos utilizar, deixando nosso app mais rápido e economizando dados, perfeito principalmente se pensarmos nos usuários que usam redes celulares. Basta indicar os campos que queremos. Nada a mais virá.
 
-## Cacilds!
-Segunda página feita com sucesso
+## Facebook é, sei...
+O GraphQL é uma especificação. Mas se você não gosta dele, tem uma outra ferramenta que trta o mesmo problema, chamada Falcor. Essa é desenvolvida pela Netflix. Pois é, não temos para onde correr meu caro.
+
+## Somente para React?
+Não senhora!  
+O GraphQL pode ser usado com qualuer framework, biblioteca e linguagem.
 
 ## EOF
 Ericabot :)
