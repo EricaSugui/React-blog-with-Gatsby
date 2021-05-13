@@ -3,7 +3,7 @@ date: 2021-12-05 18:46:00
 title: Hello World, Namastê e EOF.
 description: Meu primeiro post enquanto aprendo esse React. Não sou mais professora de yoga, mas programadora, yéah yéah!
 category: Ego
-background: "#7aab13" 
+background: "#7aa0ff" 
 ---
 
 # Hello World!
