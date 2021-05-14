@@ -5,8 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "dotenv": "^9.0.2",
     "gatsby": "^3.4.2",
     "gatsby-image": "^3.5.0",
+    "gatsby-plugin-algolia-search": "0.5.0",
     "gatsby-plugin-gatsby-cloud": "^2.4.1",
     "gatsby-plugin-image": "^1.4.1",
     "gatsby-plugin-manifest": "^3.4.0",
