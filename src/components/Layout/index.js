@@ -1,10 +1,10 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import Sidebar from "../Sidebar"
+import * as React from 'react'
+import propTypes from 'prop-types'
+import Sidebar from '../Sidebar'
 import MenuBar from '../MenuBar'
 
-import * as S from "./styled"
-import GlobalStyles from "../../styles/global"
+import * as S from './styled'
+import GlobalStyles from '../../styles/global'
 
 const Layout = ({ children }) => {
 
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: propTypes.node.isRequired,
 }
 
 export default Layout

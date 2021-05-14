@@ -1,5 +1,5 @@
 const postsQuery = `{
-    {
+    
         posts: allMarkdownRemark(
             sort: {fields: frontmatter___date, order: DESC}
         ){
@@ -20,7 +20,7 @@ const postsQuery = `{
             }
         }
         }
-    }
+    
 }`
 
 const flatten = arr =>
