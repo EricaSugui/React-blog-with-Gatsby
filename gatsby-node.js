@@ -34,24 +34,65 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
       return graphql(`
         {
-            allMarkdownRemark {
+            allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
             edges {
                 node {
-                    fields {
-                        slug
-                    }
-                
+                fields {
+                    slug
+                }
+                frontmatter {
+                    background
+                    category
+                    date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
+                    description
+                    title
+                }
+                timeToRead
+                }
+                next {
+                fields {
+                    slug
+                }
+                frontmatter {
+                    title
+                }
+                }
+                previous {
+                fields {
+                    slug
+                }
+                frontmatter {
+                    title
+                }
                 }
             }
             }
         }
       `).then(result => {
-          result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+          const posts = result.data.allMarkdownRemark.edges
+          posts.forEach(({ node, next, previous }) => {
               createPage({
                   path: node.fields.slug,
                   component: path.resolve('./src/templates/blog-post.js'),
                   context: {
-                      slug: node.fields.slug
+                      slug: node.fields.slug,
+                      previousPost: next,
+                      nextPost: previous
+                  }
+              })
+          })
+
+          const postsPerPage = 4
+          const numPages = Math.ceil(posts.length / postsPerPage)
+          Array.from({ length: numPages }).forEach((_, index) => {
+              createPage({
+                  path: index === 0 ? `/` : `/page/${index + 1}`,
+                  component: path.resolve(`./src/templates/blog-list.js`),
+                  context: {
+                      limit: postsPerPage,
+                      skip: index * postsPerPage,
+                      numPages,
+                      currentPage: index + 1
                   }
               })
           })
