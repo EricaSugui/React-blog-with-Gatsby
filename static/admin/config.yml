@@ -2,7 +2,7 @@ backend:
   name: github
   repo: EricaSugui/React-blog-with-Gatsby
   branch: main
-  site_domain: https://ericasuguimoto.netlify.app/
+  site_domain: ericasuguimoto.netlify.app
 
 publish)mode: editorial_workflow
 media_folder: "static/assets/img"
