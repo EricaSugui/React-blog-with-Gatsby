@@ -1,5 +1,5 @@
 import * as React from 'react'
-import propTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import Sidebar from '../Sidebar'
 import MenuBar from '../MenuBar'
 
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
-  children: propTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
