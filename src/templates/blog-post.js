@@ -44,6 +44,7 @@ const BlogPost = ({ data, pageContext }) => {
                     description
                     date(locale: "pt-br",
                         formatString: "DD [de] MMMM [de] YYYY",)
+                    image
                 }
                 html
                 timeToRead

@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: EricaSugui/React-blog-with-Gatsby
+  branch: main
+  site_domain: https://ericasuguimoto.netlify.app/
+
+publish)mode: editorial_workflow
+media_folder: "static/assets/img"
+public_folder: "assets/img"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: 'YYYY-DD-MM hh:mm:ss'}
+      - {label: "image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}

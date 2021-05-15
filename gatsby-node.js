@@ -3,7 +3,19 @@
  *
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
+exports.sourceNodes = ({ actions, schema }) => {
+    const { createTypes } = actions
 
+    createTypes(`
+        type MarkdownRemarkFrontmatter {
+            image: String
+        }
+        
+        type MarkdownRemark implements Node {
+            frontmatter: MarkdownRemarkFrontmatter
+        }
+    `)
+}
 // You can delete this file if you're not using it
 const path = require('path')
 const { createFilePath } = require(`gatsby-source-filesystem`)
