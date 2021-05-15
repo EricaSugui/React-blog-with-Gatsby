@@ -58,6 +58,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
                     date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
                     description
                     title
+                    image
                 }
                 timeToRead
                 }

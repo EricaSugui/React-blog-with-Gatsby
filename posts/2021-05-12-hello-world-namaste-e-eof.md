@@ -4,7 +4,7 @@ title: Hello World, Namastê e EOF.
 description: Meu primeiro post enquanto aprendo esse React. Não sou mais professora de yoga, mas programadora, yéah yéah!
 category: Ego
 background: "#7aa0ff" 
-image: /assets/img/pexels-tim-samuel-6697242.jpg
+image: "/assets/img/pexels-tim-samuel-6697242.jpg"
 ---
 
 ## Hello World!

@@ -1,4 +1,4 @@
-require("dotenv").config()
+require('dotenv').config()
 
 const queries = require('./src/utils/algolia_queries')
 
@@ -11,10 +11,10 @@ module.exports = {
     siteUrl: `https://ericasuguimoto.netlify.app`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    // sempre a primeira para funcionar com a gatsy-remark-images
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -54,7 +54,7 @@ module.exports = {
             }
           },
           `gatsby-remark-lazy-load`,
-          `gatsby-remark-prismjs`, //sempre por último
+          `gatsby-remark-prismjs`, 
         ],
       },
     },
@@ -89,5 +89,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`,
-  ],
+  ]
 }
+
+

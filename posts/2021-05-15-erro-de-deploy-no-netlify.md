@@ -5,6 +5,7 @@ date: 2021-15-05 12:09:43
 category: Estudos
 background: "orange" 
 thumbnail: assets/img/captura-de-tela-2021-05-15-às-12.10.40.png
+image: "assets/img/captura-de-tela-2021-05-15-às-12.10.40.png"
 ---
 Ontem eu resolvi que faria deploy do blog antes do ponto que o curso pede para que seja feito (no final darei o link do curso que estou fazendo).
 

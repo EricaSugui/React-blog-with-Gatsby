@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const postsQuery = `{
     
         posts: allMarkdownRemark(
@@ -30,19 +32,18 @@ const flatten = arr =>
         date_timestamp: parseInt(
             (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0)
         ),
-        ...rest
+        ...rest,
     }))
+
+const settings = { attributesToSnippet: [`excerpt:20`] }
 
 const queries = [
     {
         query: postsQuery,
         transformer: ({ data }) => flatten(data.posts.edges),
-        indexName: 'dev_gatsby_esuguimo', // overrides main index name, optional
-        settings: {
-            // optional, any index settings
-            attributesToSnippet: ['excerpt:20']
-        },
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
+        settings,
     },
 ];
 
-module.exports = queries
+module.exports = queries;
