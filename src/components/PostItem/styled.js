@@ -62,7 +62,7 @@ export const PostItemInfo = styled.div`
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
   ${media.lessThan("large")`
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   `}
 `
 
