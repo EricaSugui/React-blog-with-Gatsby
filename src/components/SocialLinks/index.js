@@ -1,13 +1,13 @@
 import * as React from 'react'
 import * as S from './styled'
-import Icons from './icons'
+import icons from './icons'
 import links from './content'
 
 const SocialLinks = () => (
     <S.SocialLinksWrapper>
         <S.SocialLinksList>
             {links.map((link, i) => {
-                const Icon = Icons[link.label]
+                const Icon = icons[link.label]
                 return (
                     <S.SocialLinksItem key={i}>
                         <S.SocialLinksLink 
