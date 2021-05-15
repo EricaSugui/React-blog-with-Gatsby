@@ -10,6 +10,7 @@ import * as S from '../components/ListWrapper/styled'
 
 const BlogList = props => {
     const postList = props.data.allMarkdownRemark.edges
+    const siteMeta = props.data.site.siteMetadata
 
     const { currentPage, numPages } = props.pageContext
     const isFirst = currentPage === 1
@@ -19,7 +20,9 @@ const BlogList = props => {
 
     return (
         <Layout>
-            <Seo title="Home" />
+            <Seo title={siteMeta.title} 
+            description={siteMeta.description} 
+            author={siteMeta.author} />
             <S.ListWrapper>
                 {postList.map(({
                     node: {
@@ -59,6 +62,14 @@ const BlogList = props => {
 
     export const query = graphql`
         query PostList($skip: Int!, $limit: Int!) {
+            site { 
+                siteMetadata { 
+                    title 
+                    description 
+                    author
+                    position
+                } 
+            } 
             allMarkdownRemark(
                 sort: {fields: frontmatter___date, order: DESC}
                 limit: $limit
