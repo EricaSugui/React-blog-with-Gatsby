@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 import { Link } from 'gatsby'
 
 export const PostItemLink = styled(Link)`
@@ -46,6 +47,10 @@ export const PostItemTag = styled.div`
   body#grid & {
     margin-bottom: 1.5rem;
   }
+  ${media.lessThan("large")`
+    border-radius: 0;
+    min-height: 30px;
+  `}
 `
 
 export const PostItemInfo = styled.div`
@@ -56,6 +61,9 @@ export const PostItemInfo = styled.div`
 
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
+  ${media.lessThan("large")`
+    font-size: 0.8rem;
+  `}
 `
 
 export const PostItemTitle = styled.h1`
@@ -73,4 +81,7 @@ export const PostItemDescription = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2;
+  ${media.lessThan("large")`
+    display: none;
+  `}
 `

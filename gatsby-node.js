@@ -94,7 +94,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
               })
           })
 
-          const postsPerPage = 4
+          const postsPerPage = 12
           const numPages = Math.ceil(posts.length / postsPerPage)
           Array.from({ length: numPages }).forEach((_, index) => {
               createPage({

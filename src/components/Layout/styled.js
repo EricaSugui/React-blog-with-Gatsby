@@ -16,13 +16,12 @@ export const LayoutMain = styled.main`
   width: 100%;
 
   body#grid & {
-    grid-template-areas:
-      "posts"
-      "pagination"; 
+    grid-template-areas: "posts" "pagination"; 
   }
   ${media.lessThan("large")`
     flex-direction: column;
     padding: 4rem 0 0 0;
+    min-width: 90vh;
   `}
 
 `

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import media from 'styled-media-query'
 
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
@@ -83,6 +84,12 @@ const GlobalStyles = createGlobalStyle`
     --background: #fff;
     --white: #fff;
     --black: #222;
+  }
+
+  .display {
+    ${media.lessThan("large")`
+        display: none;
+    `}
   }
 `
 export default GlobalStyles
