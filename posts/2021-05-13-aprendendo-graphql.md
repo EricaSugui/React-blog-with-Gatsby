@@ -4,6 +4,7 @@ title: Capítulo de hoje - aprendendo GraphQL.
 description: Construindo esse blog em React com Gatsby, eu não sabia que aprenderia sobre GraphQL.
 category: Estudos
 background: "orange" 
+image:
 ---
 
 # GraphQL?

@@ -4,6 +4,7 @@ title: Mussum Ipsum para começar.
 description: Professor pediu um segundo post aqui, então vamos encher de Lorem Ipsum cacilds.
 category: Nonon
 background: "#7aab13" 
+image:
 ---
 
 # Lorem Ipsum?
