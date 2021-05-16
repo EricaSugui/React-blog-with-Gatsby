@@ -1,10 +1,12 @@
 ---
-date: 2021-05-13 19:08:00
 title: Capítulo de hoje - aprendendo GraphQL.
-description: Construindo esse blog em React com Gatsby, eu não sabia que aprenderia sobre GraphQL.
+description: Construindo esse blog em React com Gatsby, eu não sabia que
+  aprenderia sobre GraphQL.
+date: 2021-05-13 19:08:00
 category: Estudos
-background: "orange" 
-image:
+background: "#EB5352"
+image: null
+thumbnail: assets/img/graphql.png
 ---
 
 # GraphQL?
