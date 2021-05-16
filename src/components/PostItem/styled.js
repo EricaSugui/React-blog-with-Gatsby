@@ -29,6 +29,11 @@ export const PostItemWrapper = styled.section`
     flex-direction: column;
     justify-content: center;
   }
+  ${media.lessThan("large")`
+    align-items: stretch;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  `}
 `
 
 export const PostItemTag = styled.div`
@@ -50,6 +55,7 @@ export const PostItemTag = styled.div`
   ${media.lessThan("large")`
     border-radius: 0;
     min-height: 30px;
+    margin-bottom: 1rem;
   `}
 `
 
@@ -57,6 +63,9 @@ export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
+  ${media.lessThan("large")`
+    margin-left: 0rem;
+  `}
 `
 
 export const PostItemDate = styled.time`
