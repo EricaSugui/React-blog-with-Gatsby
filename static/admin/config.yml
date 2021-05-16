@@ -15,10 +15,23 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", format: 'YYYY-DD-MM hh:mm:ss'}
-      - {label: "category", name: "category", widget: "string"}
-      - {label: "background", name: "background"}
-      - {label: "image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: 'YYYY-DD-MM hh:mm:ss' }
+      - { 
+          label: "Category", name: "category", widget: "select",
+          options: ["Ego", "Estudos", "Mercado", "42", "Idiomas", "Nonon"]
+      }
+      - { 
+          label: "Background", name: "background", widget: "select",
+          options: [
+            { label: "Ego", value: "#7aa0ff" },
+            { label: "Estudos", value: "#EB5352" },
+            { label: "Mercado", value: "#0966C2" },
+            { label: "42", value: "#01BABC" },
+            { label: "Idiomas", value: "#EC008C" },
+            { label: "Nonon", value: "#7aab13" },
+          ]
+      }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
