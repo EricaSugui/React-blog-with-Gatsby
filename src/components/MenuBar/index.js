@@ -15,11 +15,12 @@ const MenuBar = () => {
 
     const isDarkMode = theme === 'dark'
     const isListMode = display === 'list'
+    // const isDown = arrow === "down"
 
     useEffect(() => {
         setTheme(window.__theme)
         setDisplay(window.__display)
-
+        // window.__scrollTo(0, 0)
         window.__onThemeChange = () => setTheme(window.__theme)
         window.__onDisplayChange = () => setDisplay(window.__display)
     }, [])
@@ -51,7 +52,9 @@ const MenuBar = () => {
                 {isListMode ? <Grid /> : <List />}
             </S.MenuBarItem>
             
-            <S.MenuBarItem title="Ir para o topo">
+            <S.MenuBarItem title="Ir para o topo" onClick={() => {
+                window.scrollTo(0, 0)
+            }}>
                 <Arrow />
             </S.MenuBarItem>
 
