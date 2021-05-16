@@ -1,10 +1,12 @@
 ---
-date: 2021-05-12 18:46:00
 title: Hello World, Namastê e EOF.
-description: Meu primeiro post enquanto aprendo esse React. Não sou mais professora de yoga, mas programadora, yéah yéah!
+description: Meu primeiro post enquanto aprendo esse React. Não sou mais
+  professora de yoga, mas programadora, yéah yéah!
+date: 2021-05-12 18:46:00
 category: Ego
-background: "#7aa0ff" 
-image: "/assets/img/pexels-tim-samuel-6697242.jpg"
+background: "#7aa0ff"
+image: /assets/img/pexels-tim-samuel-6697242.jpg
+thumbnail: assets/img/pexels-tim-samuel-6697242.jpg
 ---
 
 ## Hello World!
