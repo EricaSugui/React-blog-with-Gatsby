@@ -1,10 +1,12 @@
 ---
-date: 2021-05-12 18:53:00
 title: Mussum Ipsum para começar.
-description: Professor pediu um segundo post aqui, então vamos encher de Lorem Ipsum cacilds.
+description: Professor pediu um segundo post aqui, então vamos encher de Lorem
+  Ipsum cacilds.
+date: 2021-05-12 18:53:00
 category: Nonon
-background: "#7aab13" 
-image:
+background: "#7aab13"
+image: null
+thumbnail: assets/img/mussum.png
 ---
 
 # Lorem Ipsum?
